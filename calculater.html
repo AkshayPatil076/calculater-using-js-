@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function add(){
+            
+        let n1= (parseInt) (document.getElementById('n1').value);
+        let n2= (parseInt) (document.getElementById('n2').value);
+            // alert(n1+n2);
+            document.getElementById('value').value=n1+n2;
+        }
+        function mul(){
+            
+            let n1= (parseInt) (document.getElementById('n1').value);
+            let n2= (parseInt) (document.getElementById('n2').value);
+            document.getElementById('value').value=n1*n2;
+            }
+
+        function sub(){
+        
+        let n1= (parseInt) (document.getElementById('n1').value);
+        let n2= (parseInt) (document.getElementById('n2').value);
+        document.getElementById('value').value=n1-n2;
+        }
+
+        function div(){
+            
+            let n1= (parseInt) (document.getElementById('n1').value);
+            let n2= (parseInt) (document.getElementById('n2').value);
+            document.getElementById('value').value=n1/n2;
+            }
+    </script>
+
+    <lab>Num1</lab><input type="text" id="n1"><br>
+    <lab>Num2</lab><input type="text" id="n2"><br>
+    <lab>Total</lab><input type="text" id="value"><br>
+
+    <button onclick="add()">+</button>
+    <button onclick="mul()">*</button>
+    <button onclick="sub()">-</button>
+    <button onclick="div()">/</button>
+</body>
+</html>
